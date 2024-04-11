@@ -3,7 +3,6 @@ import { Resvg } from "@resvg/resvg-js";
 import { type CollectionEntry } from "astro:content";
 import postOgImage from "./og-templates/post";
 import siteOgImage from "./og-templates/site";
-
 const fetchFonts = async () => {
   // Regular Font
   const fontFileRegular = await fetch(
