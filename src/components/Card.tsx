@@ -1,6 +1,7 @@
 import { slugifyStr } from "@utils/slugify";
 import Datetime from "./Datetime";
 import type { CollectionEntry } from "astro:content";
+
 export interface Props {
   href?: string;
   frontmatter: CollectionEntry<"blog">["data"];
