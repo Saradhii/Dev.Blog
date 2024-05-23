@@ -41,13 +41,11 @@ const options: SatoriOptions = {
     },
   ],
 };
-
 function svgBufferToPngBuffer(svg: string) {
   const resvg = new Resvg(svg);
   const pngData = resvg.render();
   return pngData.asPng();
 }
-
 export async function generateOgImageForPost(post: CollectionEntry<"blog">) {
   const svg = await satori(postOgImage(post), options);
   return svgBufferToPngBuffer(svg);
