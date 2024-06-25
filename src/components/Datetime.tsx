@@ -4,7 +4,6 @@ interface DatetimesProps {
   pubDatetime: string | Date;
   modDatetime: string | Date | undefined | null;
 }
-
 interface Props extends DatetimesProps {
   size?: "sm" | "lg";
   className?: string;
