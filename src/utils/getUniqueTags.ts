@@ -6,7 +6,6 @@ interface Tag {
   tag: string;
   tagName: string;
 }
-
 const getUniqueTags = (posts: CollectionEntry<"blog">[]) => {
   const tags: Tag[] = posts
     .filter(postFilter)
